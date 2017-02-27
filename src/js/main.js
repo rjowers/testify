@@ -31,6 +31,7 @@ GildedRose.prototype.tick = function () {
   if (this.name != 'Sulfuras, Hand of Ragnaros') {
     this.sellIn = this.sellIn - 1;
   }
+
   if (this.sellIn < 0) {
     if (this.name != 'Aged Brie') {
       if (this.name != 'Backstage passes to a TAFKAL80ETC concert') {
@@ -38,6 +39,9 @@ GildedRose.prototype.tick = function () {
           if (this.name != 'Sulfuras, Hand of Ragnaros') {
             this.quality = this.quality - 1;
           }
+        }
+        if (this.name === 'Conjured Mana Cake') {
+          this.quality = this.quality -2;
         }
       } else {
         this.quality = this.quality - this.quality;
@@ -48,6 +52,9 @@ GildedRose.prototype.tick = function () {
       }
     }
   }
+  // if (this.name = 'Conjured Mana Cake'){
+  //   this.quality = this.quality -2;
+  // }
 }
 
 export { GildedRose };
