@@ -12,9 +12,30 @@ GildedRose.prototype.tick = function () {
   if(this.name === 'normal' && this.sellIn < 0 && this.quality > 0) {
     this.quality = this.quality - 1;
   }
-  if(this.name === 'normal' && this.sellIn == 0 && this.quality > 0) {
+  if(this.name === 'normal' && this.sellIn === 0 && this.quality > 0) {
     this.quality = this.quality - 1;
   }
+  if(this.name === 'Aged Brie' && this.quality < 50) {
+    this.quality = this.quality + 1;
+  }
+  if (this.name === 'Aged Brie' && this.sellIn < 0 && this.quality < 50)  {
+      this.quality = this.quality + 1;
+  }
+  if (this.name === 'Aged Brie' && this.sellIn === 0 && this.quality < 50)  {
+      this.quality = this.quality + 1;
+  }
+
+
+
+
+  
+
+
+
+
+
+
+
   if(this.name === 'Conjured Mana Cake' && this.quality > 0 && this.sellIn < 0) {
     this.quality = this.quality - 2;
   }
