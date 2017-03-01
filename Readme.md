@@ -1,3 +1,8 @@
+#Testify
+
+In this project I took on the famous Gilded Rose problem. In this exercise I demonstrated an understanding of constructors and instances and demonstrated an understanding of Test Driven Development with Mocha & Chai. You may view the problem below.
+
+
 Hi and welcome to team Gilded Rose.
 
 As you know, we are a small inn with a prime location in a prominent city ran
